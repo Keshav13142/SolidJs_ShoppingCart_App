@@ -14,6 +14,7 @@
 _\*Notes for future reference_
 
 - `createSignal()` -> Similar to `useState()` in React.
+- `onMount()`-> Runs when the component is initialized for the first time. (_like `useEffect()` with empty dep array in React_)
 - `createEffect()` -> Similar to `useEffect()` in React but with no dependency Array (WOWW 😮)
 - Was surprisingly easy to work with since I've been working with React for sometime
 - Uses `vite` -> which is also very fast .
