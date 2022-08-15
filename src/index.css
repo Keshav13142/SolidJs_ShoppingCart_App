@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app {
+  border: 2px solid black;
+  display: flex;
+  max-height: 100vh;
+  max-width: 100vw;
+  gap: 10px;
+}
+
+.products-container {
+  min-width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+.products-container::-webkit-scrollbar {
+  width: 4px;
+  background-color: none;
+  border-radius: 20px;
+}
+
+.products-container::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+  border-radius: 20px;
+}
+
+.cart-container {
+  padding: 10px;
+  border-left: 4px solid rgb(177, 187, 196);
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.product {
+  border: 2px solid rgb(171, 171, 244);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 200px;
+}
+
+.product > img {
+  width: 90px;
+}
+
+.product-details {
+  text-align: center;
+  width: 100%;
+}
+
+.product-details > button {
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.add {
+  background-color: rgb(106, 129, 255);
+}
+
+.remove {
+  background-color: rgb(240, 104, 102);
+}
+
+.items-container {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+}
+
+.item {
+  padding: 10px;
+  border: 2px solid rgb(164, 144, 244);
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item > img {
+  min-width: 70px;
+  max-width: 70px;
+}
+
+.item-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 3px;
+}
+
+.quantity > button {
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(157, 157, 157);
+}
+
+.cart-container span {
+  font-weight: 700;
+  color: rgb(251, 90, 117);
+  font-size: 16px;
+}
